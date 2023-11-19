@@ -4,12 +4,7 @@ include 'db_connnection.php';
 
 $data = json_decode(file_get_contents('php://input'));
 
-echo json_encode(array(
-    'message' => 'For Sorting set values for sort_column, sort_direction --
-	 For Pagination set page_size, page (which page number) --
-	 For searching (by student name) set search_term --
-	 For Filtering (by city) set filter_city'
-));
+
 
 $query = "SELECT * FROM students ";
 
